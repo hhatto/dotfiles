@@ -81,7 +81,7 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 # for Rust
 source $HOME/.cargo/env
 export PATH=$PATH:$HOME/.multirust/toolchains/stable/cargo/bin:$HOME/.multirust/toolchains/nightly/cargo/bin
-export RUST_SRC_PATH="/Users/hattori-h/.ghq/github.com/rust-lang/rust/src"
+export RUST_SRC_PATH=$HOME/.ghq/github.com/rust-lang/rust/src
 
 # local settings
 source $HOME/.alias
@@ -92,4 +92,4 @@ if (which zprof > /dev/null) ;then
 fi
 
 # added by travis gem
-[ -f /Users/hattori-h/.travis/travis.sh ] && source /Users/hattori-h/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
