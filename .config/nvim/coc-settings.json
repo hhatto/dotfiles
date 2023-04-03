@@ -1,0 +1,11 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["css", "vue", "typescript"],
+  "prettier.useTabs": true,
+  "svelte.enable-ts-plugin": true,
+  "languageserver": {
+    "sixtyfps": {
+      "command": "sixtyfps-lsp",
+      "filetypes": ["sixtyfps"]
+    }
+  }
+}

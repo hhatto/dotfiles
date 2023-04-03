@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/Users/hattori/work_fdo/stakes.social_3/packages/web'
+let g:netrw_dirhist_3='/Users/hattori/work_tbhd'
+let g:netrw_dirhist_2='/Users/hattori/work_fdo/dev-kit-js/lib/client'
+let g:netrw_dirhist_1='/Users/hattori/ss-ogp-image-vercel'
