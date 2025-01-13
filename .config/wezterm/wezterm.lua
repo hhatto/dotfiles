@@ -1,4 +1,5 @@
 local wezterm = require 'wezterm'
+local act = wezterm.action
 local config = wezterm.config_builder()
 
 config.initial_rows = 50
@@ -12,6 +13,14 @@ config.keys = {
   {
     key = "¥",
     action = wezterm.action.SendKey { key = '\\' }
+  },
+  {
+    key = 'k',
+    mods = 'CMD',
+    action = act.Multiple {
+      act.ClearScrollback 'ScrollbackAndViewport',
+      act.SendKey { key = 'L', mods = 'CTRL' },
+    },
   },
 }
 config.window_background_opacity = 0.89
