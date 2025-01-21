@@ -14,6 +14,7 @@ config.keys = {
     key = "¥",
     action = wezterm.action.SendKey { key = '\\' }
   },
+  -- clear session
   {
     key = 'k',
     mods = 'CMD',
@@ -21,6 +22,17 @@ config.keys = {
       act.ClearScrollback 'ScrollbackAndViewport',
       act.SendKey { key = 'L', mods = 'CTRL' },
     },
+  },
+  -- move tab
+  {
+    key = 'LeftArrow',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action{ MoveTabRelative = -1 },
+  },
+  {
+    key = 'RightArrow',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action{ MoveTabRelative = 1 },
   },
 }
 config.window_background_opacity = 0.89
